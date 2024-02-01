@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/725995b05f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./assets/img/icon/favicon_32x32.png" sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Bass.az - Onlayn Audio Bazar</title>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <!-- Loader -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="left-side">
+                    <a href="">
+                        <div class="logo">
+                            <img src="./assets/img/logo/logo.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="right-side">
+
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="left-side">
+                    <nav>
+                        <ul>
+                            <li><a href="./all.html">Bütün elanlar</a></li>
+                            <li><a href="./shops.html">Mağazalar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <div class="icons">
+                        <a href="" class="icon-header"><i class="fa-regular fa-bookmark"></i></a>
+                        <a href="" class="icon-header"><i class="fa-solid fa-scale-balanced"></i></a>
+                    </div>
+                    <button class="btn-login" style="width: 100%;"><i class="fa-solid fa-circle-plus"></i> Yeni
+                        elan</button>
+                    <button class="btn-login" style="width: 60%;" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                            class="fa-solid fa-circle-user"></i> Giriş</button>
+                </div>
+            </div>
+        </div>
+        <!-- FIXED HEADER -->
+        <div class="header-bottom" id="fixedHeader">
+            <div class="container">
+                <div class="left-side d-flex align-items-center gap-5">
+                    <a href="">
+                        <div class="logo">
+                            <img src="./assets/img/logo/logo-footer.svg" alt="">
+                        </div>
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="./all.html">Bütün elanlar</a></li>
+                            <li><a href="./shops.html">Mağazalar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <div class="icons">
+                        <a href="" class="icon-header"><i class="fa-regular fa-bookmark"></i></a>
+                        <a href="" class="icon-header"><i class="fa-solid fa-scale-balanced"></i></a>
+                    </div>
+                    <button class="btn-login" style="width: 100%;"><i class="fa-solid fa-circle-plus"></i> Yeni
+                        elan</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- FIXED HEADER -->
+    </header>
+    <main>
+        <section class="new-product-section py-5">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-heading">Yeni elan</h3>
+                </div>
+                <div class="primary-alert">
+                    <span class="alert-heading">Bass.az-ın elan yerləşdirmək üçün qaydaları:</span>
+                    <span class="alert-text">• Eyni elanı bir neçə dəfə təqdim etməyin.</span>
+                    <span class="alert-text">• Məlumat və ya şəkillərdə telefon, email və ya sayt ünvanı
+                        göstərməyin.</span>
+                    <span class="alert-text">• Qadağan olunmuş məhsulları satmayın.</span>
+                </div>
+                <div class="mt-4">
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="categorySelect">
+                                        <option selected disabled>Kateqoriya</option>
+                                        <option value="1">Dinamiklər</option>
+                                        <option value="2">Midrange</option>
+                                        <option value="3">Subwoofer</option>
+                                        <option value="4">Gücləndiriclər</option>
+                                        <option value="5">Tweeter</option>
+                                        <option value="6">Aksesuarlar</option>
+                                        <option value="7">Kabellər</option>
+                                        <option value="8">Qutular</option>
+                                        <option value="9">Multimediya</option>
+                                        <option value="10">Promo</option>
+                                    </select>
+                                    <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i>
+                                        Kateqoriya seçməyiniz mütləqdir. Siyahıdan seçin.</small>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Başlıq" type="text" maxlength="200">
+                                    <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i> Məhsulu
+                                        təsvir edən qısa başlıq yazın. (Maks. 200 simvol)</small>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option selected disabled>Satış şəhəri</option>
+                                        <option value="">Bakı</option>
+                                        <option value="">Ağdam</option>
+                                        <option value="">Sumqayıt</option>
+                                        <option value="">Masallı</option>
+                                        <option value="">Şəki</option>
+                                    </select>
+                                    <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i>
+                                        Kateqoriya seçməyiniz mütləqdir. Siyahıdan seçin.</small>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Qiymət, AZN" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" cols="30" rows="10" placeholder="Məlumat"></textarea>
+                                    <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i> Məlumat
+                                        bölməsində link, e-mail, qiymət və xidmət təklifi yazmaq qadağandır.</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div id="dinamik-inputs" class="p-4 mb-2 rounded border">
+                                    <span class="new-product-category-span">● <b>"Dinamik"</b> üçün ümumi
+                                        göstəricilər</span>
+                                    <div class="form-group mt-4">
+                                        <select class="form-control">
+                                            <option selected disabled>Marka</option>
+                                            <option value="Alpine">Alpine</option>
+                                            <option value="Audio Nova">Audio Nova</option>
+                                            <option value="AudioBeat">AudioBeat</option>
+                                            <option value="Audison">Audison</option>
+                                            <option value="Autotek">Autotek</option>
+                                            <option value="Avatar">Avatar</option>
+                                            <option value="Axton">Axton</option>
+                                            <option value="BassHabit">BassHabit</option>
+                                            <option value="Best Balance">Best Balance</option>
+                                            <option value="Black Hydra">Black Hydra</option>
+                                            <option value="Blam">Blam</option>
+                                            <option value="BRAX">BRAX</option>
+                                            <option value="CADENCE">CADENCE</option>
+                                            <option value="Crunch">Crunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Standart ölçü:</option>
+                                            <option value="3.5">3.5 düym (8.89 sm)</option>
+                                            <option value="4">4 düym (10.16 sm)</option>
+                                            <option value="4.5">4.5 düym (11.43 sm)</option>
+                                            <option value="5.25">5.25 düym (13.34 sm)</option>
+                                            <option value="6">6 düym (15.24 sm)</option>
+                                            <option value="6.5">6.5 düym (16.51 sm)</option>
+                                            <option value="6x8">6x8 düym (15.24 x 20.32 sm)</option>
+                                            <option value="6x9">6x9 düym (15.24 x 22.86 sm)</option>
+                                            <option value="4x6">4x6 düym (10.16 x 15.24 sm)</option>
+                                            <option value="5x7">5x7 düym (12.70 x 17.78 sm)</option>
+                                            <option value="6x8_2">6x8 düym (15.24 x 20.32 sm)</option>
+                                            <option value="6x9_2">6x9 düym (15.24 x 22.86 sm)</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Nominal Gücü (RMS):</option>
+                                            <option value="20">20 V RMS</option>
+                                            <option value="30">30 V RMS</option>
+                                            <option value="40">40 V RMS</option>
+                                            <option value="50">50 V RMS</option>
+                                            <option value="60">60 V RMS</option>
+                                            <option value="75">75 V RMS</option>
+                                            <option value="100">100 V RMS</option>
+                                            <option value="120">120 V RMS</option>
+                                            <option value="150">150 V RMS</option>
+                                            <option value="200">200 V RMS</option>
+                                            <option value="250">250 V RMS</option>
+                                            <option value="300">300 V RMS</option>
+                                            <option value="400">400 V RMS</option>
+                                            <option value="500">500 V RMS</option>
+                                            <option value="600">600 V RMS</option>
+                                            <option value="800">800 V RMS</option>
+                                            <option value="1000">1000 V RMS</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Maksimum güc:</option>
+                                            <option value="30">30 V</option>
+                                            <option value="40">40 V</option>
+                                            <option value="50">50 V</option>
+                                            <option value="60">60 V</option>
+                                            <option value="75">75 V</option>
+                                            <option value="100">100 V</option>
+                                            <option value="120">120 V</option>
+                                            <option value="150">150 V</option>
+                                            <option value="200">200 V</option>
+                                            <option value="250">250 V</option>
+                                            <option value="300">300 V</option>
+                                            <option value="400">400 V</option>
+                                            <option value="500">500 V</option>
+                                            <option value="600">600 V</option>
+                                            <option value="800">800 V</option>
+                                            <option value="1000">1000 V</option>
+                                            <option value="1200">1200 V</option>
+                                            <option value="1500">1500 V</option>
+                                            <option value="2000">2000 V</option>
+                                            <option value="2500">2500 V</option>
+                                            <option value="3000">3000 V</option>
+                                            <option value="4000">4000 V</option>
+                                            <option value="5000">5000 V</option>
+                                            <option value="6000">6000 V</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Həssaslıq:</option>
+                                            <option value="80">80 dB</option>
+                                            <option value="85">85 dB</option>
+                                            <option value="88">88 dB</option>
+                                            <option value="90">90 dB</option>
+                                            <option value="92">92 dB</option>
+                                            <option value="95">95 dB</option>
+                                            <option value="98">98 dB</option>
+                                            <option value="100">100 dB</option>
+                                            <option value="102">102 dB</option>
+                                            <option value="105">105 dB</option>
+                                            <option value="108">108 dB</option>
+                                            <option value="110">110 dB</option>
+                                            <option value="112">112 dB</option>
+                                            <option value="115">115 dB</option>
+                                            <option value="118">118 dB</option>
+                                            <option value="120">120 dB</option>
+                                            <option value="122">122 dB</option>
+                                            <option value="125">125 dB</option>
+                                            <option value="128">128 dB</option>
+                                            <option value="130">130 dB</option>
+                                            <option value="132">132 dB</option>
+                                            <option value="135">135 dB</option>
+                                            <option value="138">138 dB</option>
+                                            <option value="140">140 dB</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="subwoofer-inputs" class="p-4 mb-2 rounded border">
+                                    <span class="new-product-category-span">● <b>"Subwoofer"</b> üçün ümumi
+                                        göstəricilər</span>
+                                    <div class="form-group mt-4">
+                                        <select class="form-control">
+                                            <option selected disabled>Marka</option>
+                                            <option value="Alpine">Alpine</option>
+                                            <option value="Audio Nova">Audio Nova</option>
+                                            <option value="AudioBeat">AudioBeat</option>
+                                            <option value="Audison">Audison</option>
+                                            <option value="Autotek">Autotek</option>
+                                            <option value="Avatar">Avatar</option>
+                                            <option value="Axton">Axton</option>
+                                            <option value="BassHabit">BassHabit</option>
+                                            <option value="Best Balance">Best Balance</option>
+                                            <option value="Black Hydra">Black Hydra</option>
+                                            <option value="Blam">Blam</option>
+                                            <option value="BRAX">BRAX</option>
+                                            <option value="CADENCE">CADENCE</option>
+                                            <option value="Crunch">Crunch</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Standart ölçü:</option>
+                                            <option value="6">6 düym (15.24 sm)</option>
+                                            <option value="6.5">6.5 düym (16.51 sm)</option>
+                                            <option value="8">8 düym (20.32 sm)</option>
+                                            <option value="10">10 düym (25.40 sm)</option>
+                                            <option value="12">12 düym (30.48 sm)</option>
+                                            <option value="15">15 düym (38.10 sm)</option>
+                                            <option value="18">18 düym (45.72 sm)</option>
+                                            <option value="21">21 düym (53.34 sm)</option>
+                                            <option value="24">24 düym (60.96 sm)</option>
+                                            <option value="30">30 düym (76.20 sm)</option>
+                                            <option value="36">36 düym (91.44 sm)</option>
+                                            <option value="42">42 düym (106.68 sm)</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Nominal Gücü (RMS):</option>
+                                            <option value="20">20 V RMS</option>
+                                            <option value="30">30 V RMS</option>
+                                            <option value="40">40 V RMS</option>
+                                            <option value="50">50 V RMS</option>
+                                            <option value="60">60 V RMS</option>
+                                            <option value="75">75 V RMS</option>
+                                            <option value="100">100 V RMS</option>
+                                            <option value="120">120 V RMS</option>
+                                            <option value="150">150 V RMS</option>
+                                            <option value="200">200 V RMS</option>
+                                            <option value="250">250 V RMS</option>
+                                            <option value="300">300 V RMS</option>
+                                            <option value="400">400 V RMS</option>
+                                            <option value="500">500 V RMS</option>
+                                            <option value="600">600 V RMS</option>
+                                            <option value="800">800 V RMS</option>
+                                            <option value="1000">1000 V RMS</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Maksimum güc:</option>
+                                            <option value="30">30 V</option>
+                                            <option value="40">40 V</option>
+                                            <option value="50">50 V</option>
+                                            <option value="60">60 V</option>
+                                            <option value="75">75 V</option>
+                                            <option value="100">100 V</option>
+                                            <option value="120">120 V</option>
+                                            <option value="150">150 V</option>
+                                            <option value="200">200 V</option>
+                                            <option value="250">250 V</option>
+                                            <option value="300">300 V</option>
+                                            <option value="400">400 V</option>
+                                            <option value="500">500 V</option>
+                                            <option value="600">600 V</option>
+                                            <option value="800">800 V</option>
+                                            <option value="1000">1000 V</option>
+                                            <option value="1200">1200 V</option>
+                                            <option value="1500">1500 V</option>
+                                            <option value="2000">2000 V</option>
+                                            <option value="2500">2500 V</option>
+                                            <option value="3000">3000 V</option>
+                                            <option value="4000">4000 V</option>
+                                            <option value="5000">5000 V</option>
+                                            <option value="6000">6000 V</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option selected disabled>Həssaslıq:</option>
+                                            <option value="80">80 dB</option>
+                                            <option value="85">85 dB</option>
+                                            <option value="88">88 dB</option>
+                                            <option value="90">90 dB</option>
+                                            <option value="92">92 dB</option>
+                                            <option value="95">95 dB</option>
+                                            <option value="98">98 dB</option>
+                                            <option value="100">100 dB</option>
+                                            <option value="102">102 dB</option>
+                                            <option value="105">105 dB</option>
+                                            <option value="108">108 dB</option>
+                                            <option value="110">110 dB</option>
+                                            <option value="112">112 dB</option>
+                                            <option value="115">115 dB</option>
+                                            <option value="118">118 dB</option>
+                                            <option value="120">120 dB</option>
+                                            <option value="122">122 dB</option>
+                                            <option value="125">125 dB</option>
+                                            <option value="128">128 dB</option>
+                                            <option value="130">130 dB</option>
+                                            <option value="132">132 dB</option>
+                                            <option value="135">135 dB</option>
+                                            <option value="138">138 dB</option>
+                                            <option value="140">140 dB</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option selected disabled>Vəziyyəti</option>
+                                        <option value="">Yeni</option>
+                                        <option value="">İşlənmiş</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group mt-4">
+                                    <label for="imageInput" class="btn-login">
+                                        <i class="fa-solid fa-images"></i> Şəkil əlavə et
+                                        <input type="file" id="imageInput" class="d-none" accept="image/jpeg, image/png"
+                                            multiple>
+                                    </label>
+                                    <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i> Şəkil
+                                        sayı min.1 maks. 10 ədəd olmalıdır. Şəkilləri yüklədikdən sonra əsas şəkil
+                                        olaraq birinci sırada duran şəkil seçilir. Digərlərinin üzərinə klik edərək əsas
+                                        şəkli dəyişə bilərsiniz. Format yalnız IMG, PNG olmalıdır! </small>
+                                </div>
+
+                                <div id="imagePreview" class="d-flex flex-wrap">
+                                    <!-- Display uploaded images here -->
+                                </div>
+
+                                <div id="noImagesAlert" class="primary-alert no-images-alert" role="alert">
+                                    • Hal-hazırda şəkil seçməmisiniz.
+                                </div>
+
+                            </div>
+                            <div class="col-12">
+                                <h6>Əlaqə məlumatları</h6>
+                                <div class="form-group">
+                                    <input class="form-control" value="Vaqif" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" value="vaqifveliyev1999@outlook.com" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Mobil nömrə">
+                                    <small class="form-text text-muted"><i class="fa-solid fa-circle-info"></i> Mobil
+                                        nömrə bu formada yazılmalıdır: +994XXXXXXXXX. Əlaqə nömrəsi mütləq şəkildə
+                                        düzgün olmalıdır!</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-side mt-4 d-flex justify-content-end">
+                            <button class="btn-send" onclick="submitForm()">Elanı Göndər</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <a href="">
+                    <img src="./assets/img/logo/logo-footer.svg" alt="">
+                </a>
+            </div>
+            <div class="copyright-rules">
+                <span class="copyright">© 2024 Bütün hüquqlar qorunur</span>
+                <span class="information">Sayt üzrə olan foto və mətn materialları, yalnız sayt idarəçilərinin
+                    təsdiqindən sonra istifadə edilə bilər.</span>
+                <a href="mailto:online@bass.az" class="information"
+                    style="display: flex; align-items: center; column-gap: 5px;"><i class="fa-solid fa-envelope"></i>
+                    online@bass.az</a>
+                <span class="term-rules">Layihə haqqında</span>
+                <span class="term-rules">Məxfilik siyasəti</span>
+                <span class="term-rules">Qaydalar</span>
+            </div>
+            <div class="social-media">
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Hesaba Giriş</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Email və ya Mobil nömrə" id="username"
+                                name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Şifrə" id="password"
+                                name="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="forgot-password-link" data-bs-toggle="modal"
+                                data-bs-target="#forgotPasswordModal">Şifrəni unutdunuz?</a>
+                        </div>
+                        <button type="submit" class="btn-login" style="width: 100%; height: 50px;">Daxil ol</button>
+                        <button type="submit" class="btn-register" style="width: 100%;" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Qeydiyyat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Hesab Yarat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ad" id="firstName" name="firstName"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Soyad" id="lastName" name="lastName"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="+994(__)___-__-__" id="phoneNumber"
+                                name="phoneNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-mail" id="regUsername"
+                                name="regUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Şifrə" id="regPassword"
+                                name="regPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Şifrə Təkrar"
+                                id="regPasswordRepeat" name="regPasswordRepeat" required>
+                        </div>
+                        <button type="submit" class="btn-login" style="width: 100%; height: 50px;">Qeydiyyat</button>
+                        <button type="submit" class="btn-register" style="width: 100%;" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Geri</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration Modal -->
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog"
+        aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotPasswordModalLabel">Şifrəni unutdunuz?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input class="form-control" type="email" placeholder="E-mail ünvanınızı daxil edin">
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn-login" style="width: 100%; height: 50px;">Göndər</button>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn-register" style="width: 100%;" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Geri</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forgot Password Modal -->
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        /* DISABLE SUBMIT BUTTON */
+        
+            function submitForm() {
+                event.preventDefault();
+                var btnSend = document.querySelector('.btn-send');
+                btnSend.disabled = true;
+                btnSend.style.opacity = '0.5';
+                btnSend.style.cursor = 'not-allowed';
+                setTimeout(function () {
+                    btnSend.disabled = false;
+                    btnSend.style.opacity = '1';  
+                }, 4000);
+            }
+
+        /* DISABLE SUBMIT BUTTON */
+
+        $(document).ready(function () {
+            $("#categorySelect").change(function () {
+                var selectedOption = $(this).val();
+                if (selectedOption === "1") {
+                    $("#dinamik-inputs").show();
+                } else {
+                    $("#dinamik-inputs").hide();
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $("#categorySelect").change(function () {
+                var selectedOption = $(this).val();
+                if (selectedOption === "3") {
+                    $("#subwoofer-inputs").show();
+                } else {
+                    $("#subwoofer-inputs").hide();
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('#imageInput').on('change', handleFileSelect);
+
+            function handleFileSelect(event) {
+                const files = event.target.files;
+                const noImagesAlert = $('#noImagesAlert');
+
+                if (files.length === 0) {
+                    noImagesAlert.css('display', 'block');
+                } else {
+                    noImagesAlert.css('display', 'none');
+                }
+
+                if (files.length > 10) {
+                    alert('You can only select up to 10 images.');
+                    return;
+                }
+
+
+
+                $.each(files, function (index, file) {
+                    if (!file.type.match('image/jpeg') && !file.type.match('image/png')) {
+                        alert('Şəkil formatı tələblərə uyğun deyil, zəhmət olmasa JPG və PNG formatlarından istifadə edin!');
+                        return;
+                    }
+
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        const imageUrl = e.target.result;
+                        addImageCard(imageUrl);
+                    };
+
+                    reader.readAsDataURL(file);
+                });
+            }
+
+            function addImageCard(imageUrl) {
+                const imagePreview = $('#imagePreview');
+                const card = $('<div class="image-card"></div>');
+
+                const deleteBtn = $('<i class="fas fa-times delete-btn"></i>');
+                deleteBtn.on('click', function () {
+                    const isMain = card.hasClass('IsMain');
+
+                    if (isMain) {
+                        const nextCard = card.next() || card.prev();
+                        if (nextCard.length) {
+                            nextCard.addClass('IsMain');
+                            addMainTag(nextCard);
+                        }
+                    }
+
+                    card.remove();
+
+                    const remainingImages = $('.image-card');
+                    if (remainingImages.length === 0) {
+                        $('#noImagesAlert').css('display', 'block');
+                    }
+                });
+
+                const imgContainer = $('<div class="img-container"></div>');
+                const img = $('<img src="' + imageUrl + '" class="img-fluid">');
+
+                imgContainer.append(img);
+                card.append(imgContainer).append(deleteBtn);
+
+                if (imagePreview.children().length === 0) {
+                    card.addClass('IsMain');
+                    addMainTag(card);
+                    $('#noImagesAlert').css('display', 'none');
+                }
+
+                imgContainer.on('click', function () {
+                    $('.image-card').removeClass('IsMain');
+                    card.addClass('IsMain');
+                    addMainTag(card);
+                });
+
+                imagePreview.append(card);
+            }
+
+
+
+            function addMainTag(card) {
+                $('.main-tag').remove();
+
+                const mainTag = $('<span class="main-tag">Main</span>');
+                card.append(mainTag);
+            }
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

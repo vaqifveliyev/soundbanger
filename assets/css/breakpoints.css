@@ -1,0 +1,116 @@
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .header-top {
+        display: none;
+    }
+    .header-bottom {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    
+
+    .header-mobile .mobile-logo {
+        width: 140px;
+    }
+
+    .header-mobile .mobile-logo img {
+        width: 100%;
+    }
+
+    .btn-hamburger {
+        background: transparent;
+        border: none;
+        font-size: 20px;
+    }
+
+    .btn-favorites {
+        font-size: 18px;
+    }
+
+    .hero {
+        width: 95% !important;
+        margin: 0px auto;
+        padding: 12px 0px !important;
+    }
+
+    .hero .left-col {
+        display: none;
+    }
+
+    .hero .right-col {
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .product-row .product-card {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .product-row .product-card .product-thumbnail {
+        height: 150px;
+    }
+
+    .shop-tag {
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .featured-tag {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .product-category {
+        font-size: 9px;
+        width: 100%;
+    }
+
+    .product-price {
+        font-size: 10px;
+    }
+
+    .product-button {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .product-credit-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .product-title {
+        font-size: 10px;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center !important;
+        column-gap: 10px;
+    }
+
+    .section-header h3 {
+        font-size: 16px;
+        margin: 0px !important;
+    }
+
+    .section-header a {
+        font-size: 14px;
+    }
+  }

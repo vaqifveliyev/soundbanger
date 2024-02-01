@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/725995b05f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./assets/img/logo/favicon.png" sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bass.az - Onlayn Audio Bazar</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="left-side">
+                    <a href="">
+                        <div class="logo">
+                            <img src="./assets/img/logo/logo.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="right-side"></div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="left-side">
+                    <nav>
+                        <ul>
+                            <li><a href="./all.html">Bütün elanlar</a></li>
+                            <li><a href="./shops.html">Mağazalar</a></li>
+                            <li><a href="">Hədiyyə kartları</a></li>
+                            <li><a href="">Tədbirlər</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-side">
+                    <div class="icons">
+                        <a href="" class="icon-header"><i class="fa-regular fa-bookmark"></i></a>
+                        <a href="" class="icon-header"><i class="fa-solid fa-scale-balanced"></i></a>
+                    </div>
+                    <button class="btn-login" style="width: 100%;"><i class="fa-solid fa-circle-plus"></i> Yeni
+                        elan</button>
+                    <button class="btn-login" style="width: 60%;" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                            class="fa-solid fa-circle-user"></i> Giriş</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="shops py-5">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-heading">Mağazalar (0)</h3>
+                </div>
+                <div class="shop-row mt-4">
+                    <div class="shop-card d-flex align-items-center gap-4">
+                        <div class="shop-thumbnail">
+                            <img src="./assets/img/images/shop-logo.jpg" alt="">
+                        </div>
+                        <div class="info-side">
+                            <a href="">
+                                <h6>Mağaza "Status Avto"</h6>
+                            </a>
+                            <span class="shop-number"><i class="fa-solid fa-square-phone"></i> +994502148450</span>
+                            <span class="post-count">7 elan</span>
+                        </div>
+                    </div>
+                    <div class="shop-card d-flex align-items-center gap-4">
+                        <div class="shop-thumbnail">
+                            <img src="./assets/img/images/shop-logo.jpg" alt="">
+                        </div>
+                        <div class="info-side">
+                            <a href="">
+                                <h6>Mağaza "Status Avto"</h6>
+                            </a>
+                            <span class="shop-number"><i class="fa-solid fa-square-phone"></i> +994502148450</span>
+                            <span class="post-count">7 elan</span>
+                        </div>
+                    </div>
+                    <div class="shop-card d-flex align-items-center gap-4">
+                        <div class="shop-thumbnail">
+                            <img src="./assets/img/images/shop-logo.jpg" alt="">
+                        </div>
+                        <div class="info-side">
+                            <a href="">
+                                <h6>Mağaza "Status Avto"</h6>
+                            </a>
+                            <span class="shop-number"><i class="fa-solid fa-square-phone"></i> +994502148450</span>
+                            <span class="post-count">7 elan</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="featured py-5">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-heading">Son elanlar</h3>
+                    <a href="#">Hamısına bax <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                <div class="product-row mt-4">
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-thumbnail">
+                            <img src="./assets/img/images/product.webp" alt="">
+                            <span class="shop-tag">Mağaza</span>
+                            <span class="featured-tag"><i class="fa-solid fa-arrow-up"></i></span>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">● Dinamiklər</span>
+                            <span class="product-title">Компонентная акустика Best Balance A6.5C</span>
+                            <span class="product-price">1200 AZN</span>
+                            <div class="product-buttons">
+                                <button class="product-button"><i class="fa-regular fa-bookmark"></i></button>
+                                <button class="product-button"><i class="fa-solid fa-scale-balanced"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <a href="">
+                    <img src="./assets/img/logo/logo-footer.svg" alt="">
+                </a>
+            </div>
+            <div class="copyright-rules">
+                <span class="copyright">© 2024 Bütün hüquqlar qorunur</span>
+                <span class="information">Saytda olan foto və mətn materialları yalnız sayt sahiblərinin razılığı ilə
+                    istifadə edilə bilər.</span>
+                <span class="term-rules">Qaydalar və şərtlər</span>
+            </div>
+            <div class="social-media">
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                <a href="" class="footer-social-icon"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Hesaba Giriş</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Email və ya Mobil nömrə" id="username"
+                                name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Şifrə" id="password"
+                                name="password" required>
+                        </div>
+                        <button type="submit" class="btn-login" style="width: 100%;height: 50px;">Daxil ol</button>
+                        <button type="submit" class="btn-register" style="width: 100%;" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Qeydiyyat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Hesab Yarat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Ad" id="firstName" name="firstName"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Soyad" id="lastName" name="lastName"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="+994(__)___-__-__" id="phoneNumber"
+                                name="phoneNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="E-mail" id="regUsername"
+                                name="regUsername" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Şifrə" id="regPassword"
+                                name="regPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Şifrə Təkrar"
+                                id="regPasswordRepeat" name="regPasswordRepeat" required>
+                        </div>
+                        <button type="submit" class="btn-login" style="width: 100%; height: 50px;">Qeydiyyat</button>
+                        <button type="submit" class="btn-register" style="width: 100%;" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Geri</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration Modal -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
